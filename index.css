@@ -298,7 +298,8 @@ p {
 	color: #4e94ce;
 }
 
-.hidden-li, .hidden-br {
+.hidden-li,
+.hidden-br {
 	display: none;
 }
 
@@ -308,9 +309,8 @@ p {
 
 .dropdown {
 	position: relative;
-	display:flex;
+	display: flex;
 	align-items: center;
-	
 }
 
 .dropdown:hover {
@@ -323,12 +323,11 @@ p {
 	font-size: 14px;
 	left: 55%;
 	cursor: pointer;
-	/* z-index: -1; */
 }
 
 .selectColor {
 	appearance: none;
-	background-color: transparent;
+	background-color: #272822;
 	color: white;
 	border: none;
 	outline: none;
@@ -339,7 +338,8 @@ p {
 	font-weight: 600;
 }
 
-.selectColor:hover, .arrow:hover {
+.selectColor:hover,
+.arrow:hover {
 	color: #4e94ce;
 }
 
@@ -348,8 +348,6 @@ option {
 }
 
 @media screen and (max-width: 575px) {
-
-
 	.nav_bar {
 		display: flex;
 		gap: 1.5px;
@@ -381,7 +379,6 @@ option {
 	.left-side {
 		margin-left: 5px;
 		line-height: 22px;
-		
 	}
 
 	.numbers li {
@@ -406,7 +403,9 @@ option {
 		font-size: 0.9rem;
 	}
 
-	.mobile p, .runtext_mobile, .nex_mobile {
+	.mobile p,
+	.runtext_mobile,
+	.nex_mobile {
 		font-size: 0.9rem;
 	}
 
@@ -524,11 +523,10 @@ option {
 		color: #ffffff;
 		list-style-type: none;
 	}
-	.hidden-li, .hidden-br {
+	.hidden-li,
+	.hidden-br {
 		display: block;
 	}
-
-	
 }
 
 @media screen and (min-width: 768px) {
