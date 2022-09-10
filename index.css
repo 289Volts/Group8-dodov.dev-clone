@@ -267,7 +267,10 @@ p {
 	font-size: 16px;
 	font-family: "Fira Code", monospace;
 }
-
+.nextext a:hover,
+.runtext a:hover {
+  color: #4e94ce;
+}
 .nexo {
 	display: flex;
 	gap: 15px;

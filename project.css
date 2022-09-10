@@ -110,6 +110,12 @@ a.yellow_link {
   text-decoration: underline;
   text-underline-position: under;
 }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-family: "Fira Code", monospace;
+}
 
 .footer_separator {
   margin: 1.5rem 0;
@@ -140,6 +146,47 @@ a.yellow_link {
 .footer_links li {
   list-style: none;
 }
+
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown:hover {
+  color: #4e94ce;
+}
+
+.arrow {
+  position: absolute;
+  color: #a6e22e;
+  font-size: 14px;
+  left: 55%;
+  cursor: pointer;
+}
+
+.selectColor {
+  appearance: none;
+  background-color: #272822;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Fira Code", monospace;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.selectColor:hover,
+.arrow:hover {
+  color: #4e94ce;
+}
+
+option {
+  padding: 1rem 0.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .parent_container {
     width: 750px;
