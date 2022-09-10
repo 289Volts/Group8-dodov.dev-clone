@@ -2,13 +2,18 @@
 
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
     font-family: 'Fira Code', monospace;
+    /* overflow-x: hidden; */
 }
 
 body {
     background-color: #1e1f1c;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .container {
