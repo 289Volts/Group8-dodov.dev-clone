@@ -69,3 +69,19 @@ ul li:not(.socials li, .nav-links li)::marker {
 	color: #757260;
 }
 
+::-webkit-scrollbar {
+		width: 15px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: #1e1f1c;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #79797966;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #646464b3;
+	}
+

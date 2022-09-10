@@ -1,18 +1,21 @@
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fira Code", monospace;
+ 
 }
 
 body {
   background-color: #1e1f1c;
-  color: #fff;
+  color: #fff; 
+  
 }
 
 .container {
+  font-family: 'Fira Code', monospace;
   max-width: 800px;
-  height: 980vh;
   display: flex;
   margin: 0 auto;
   background-color: hsl(70, 8%, 15%);
@@ -28,7 +31,7 @@ body {
 
 .container ol li {
   font-size: 17px;
-  line-height: 25px;
+  line-height: 22px;
   color:#b9baae;
 }
 
@@ -43,15 +46,15 @@ body {
 }
 
 .left-h2 {
-  font-size: 24px;
-  line-height: 25px;
+  font-size: 17px;
+  line-height: 22px;
   color: #f8f8f2;
 }
 .left p {
   font-size: 18px;
   color: #cfcfc2;
   margin-top: -42px;
-  line-height: 25px;
+  line-height: 22px;
 }
 h2 {
   font-size: 23px;
@@ -64,7 +67,7 @@ p {
   /* font-size: 14px; */
   width: 640px;
   /* font-weight: bold; */
-  line-height: 25px;
+  line-height: 22px;
   font-size: 16px;
   font-weight: 500;
 }
@@ -115,7 +118,7 @@ span {
   font-weight: 600; */
   font-size: 16px;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 22px;
 }
 .list-num li::before {
   content: "– ";
@@ -124,7 +127,7 @@ span {
 }
 .i-was-developing {
   margin-top: 0.2rem;
-  line-height: 25px;
+  line-height: 22px;
 }
 .at-the-point {
   width: 645px;
@@ -140,7 +143,7 @@ span {
 }
 .code-h2 {
   margin-top: 1.7rem;
-  line-height: 25px;
+  line-height: 22px;
 }
 .maintenance-h2 {
   margin-top: 1.4rem;
@@ -150,7 +153,7 @@ span {
 }
 .if-p {
   margin-top: -0.1rem;
-  line-height: 25px;
+  line-height: 22px;
 }
 .launch-h2 {
   margin-top: 2.5rem;
@@ -172,7 +175,7 @@ body a:hover {
   font-size: 16px;
     font-weight: 500;
   margin-bottom: 1rem;
-  line-height: 25px;
+  line-height: 22px;
   margin-top: 0.2rem;
 }
 .dash {
@@ -191,7 +194,7 @@ body a:hover {
   text-align: left;
   max-width: 640px;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 22px;
   margin-bottom: 1rem;
   font-size: 16px;
 }
@@ -213,11 +216,11 @@ body a:hover {
 .we-should-p {
   margin-top: -4px;
   width: 650px;
-  line-height: 25px;
+  line-height: 22px;
 }
 .it-impossible-p {
   width: 650px;
-  line-height: 25px;
+  line-height: 22px;
 }
 .footer-link {
   display: flex;
@@ -279,7 +282,6 @@ select option {
     margin: 1rem auto;
   }
   .left {
-    /* max-width: 230px; */
     width: 100%;
   }
   .left p {
@@ -289,8 +291,11 @@ select option {
     max-width: 230.72px;
   }
 
+  .left-h2 {
+    font-size: 1.3rem;
+  }
+
   .right span {
-    /* max-width: 200px; */
     width: 100%;
   }
   .span-none {
@@ -317,19 +322,12 @@ select option {
     width: 100%;
     height: auto;
     margin: 2.5rem auto;
-    /* width: 100%; */
   }
   .img-xkcd img {
-    /* width: 379px; */
-    /* height: 200px; */
     width: 100%;
     height: auto;
     padding: 5% 5%;
-    /* width: 100%; */
   }
-  /* .last-dash ul li{
-    margin-right: 3rem;
-  } */
   .span-1 {
     display: none;
   }

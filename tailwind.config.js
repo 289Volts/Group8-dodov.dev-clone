@@ -2,10 +2,6 @@
 module.exports = {
 	content: ["./*.{html,css,js}"],
 	theme: {
-		fontFamily: {
-			mono: ["Fira Code", "monospace"],
-		},
-
 		screens: {
 			normal: "375px",
 			tab: "768px",
@@ -28,8 +24,8 @@ module.exports = {
 				code3: "#75725f",
 				dashed: "#757260",
 			},
-			screens: {
-				iphoneplus: "414px",
+			fontFamily: {
+				mono: ["Fira Code", "monospace"],
 			},
 		},
 		plugins: [],
