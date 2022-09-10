@@ -13,7 +13,9 @@ h1 {
 p {
   color: #cfcfc2;
 }
-
+.color_blue:hover {
+  color: #4e94ce;
+}
 .nav_bar {
   padding-top: 3rem;
   width: 100%;
@@ -22,18 +24,24 @@ p {
 }
 .nav_bar .home,
 .blog,
-.project {
+.project,
+.extra_link {
   color: white;
   background-color: #272822;
   padding: 1rem;
   border: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+.extra_link span {
+  font-size: 0.8rem;
+  margin-left: 1rem;
 }
 .nav_bar .home,
 .blog,
 .project a:hover {
   background-color: #34352f;
 }
+
 .parent_container {
   display: flex;
   justify-content: center;
@@ -126,6 +134,9 @@ a.yellow_link {
   text-decoration: underline;
   text-underline-position: under;
 }
+.footer_links li a:hover {
+  color: #4e94ce !important;
+}
 .footer_links li {
   list-style: none;
 }
@@ -152,6 +163,9 @@ a.yellow_link {
   }
   a.yellow_link {
     color: #a6e22e !important;
+  }
+  a.yellow_link:hover {
+    color: #4e94ce !important;
   }
   .footer_separator::before {
     content: "//";
