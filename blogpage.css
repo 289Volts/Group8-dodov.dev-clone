@@ -5,7 +5,6 @@
     /* padding: 0; */
     box-sizing: border-box;
     font-family: 'Fira Code', monospace;
-    /* overflow-x: hidden; */
 }
 
 body {
@@ -18,7 +17,7 @@ body::-webkit-scrollbar {
 
 .container {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #272822;
     max-width: 800px;
     margin: 96px auto;
@@ -35,10 +34,15 @@ p {
 /* Numbers */
 .numbers {
     padding-top: 32px;
-    padding-left: 48px;
+    padding-left: 40px;
     color: #90908a;
     text-align: right;
     line-height: 24px;
+}
+
+.hidden,
+.hidden1 {
+    display: none;
 }
 
 /* Header */
@@ -168,6 +172,17 @@ h3 a:hover {
         margin-bottom: 24px;
     }
 
+    .hr_div {
+        margin-top: 20px;
+    }
+
+    .hidden {
+    display: block;
+}
+
+    .hidden1 {
+    display: none;
+
 }
 
 @media screen and (max-width:375px) {
@@ -256,13 +271,18 @@ h3 a:hover {
         display: block;
         list-style-type: none;
         margin-bottom: 24px;
+        padding-left: 0;
+        margin-top: -10px;
     }
 
     .monokai {
         margin-left: 0px;
+        /* line-height: 1px; */
     }
-}
 
+    .hidden1 {
+    display: block;
+}
 
 /* Browser Cache Page */
 /* Numbers */
