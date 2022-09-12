@@ -21,9 +21,8 @@ body::-webkit-scrollbar {
     justify-content: center;
     background-color: #272822;
     max-width: 800px;
-    margin: 96px auto;
+    margin: 0 auto;
     line-height: 24px;
-    padding-bottom: 200px;
 }
 
 h1,
@@ -32,10 +31,45 @@ p {
     color: #f8f8f2;
 }
 
+a {
+	text-underline-offset: 5px;
+}
+
+.nav_bar {
+	justify-content: flex-start;
+	display: flex;
+    max-width: 800px;
+    margin: 4.5rem auto 0 auto;
+	gap: 1.35px;
+	font-family: sans-serif;
+}
+
+.home,
+.blog,
+.project {
+	color: white;
+	background-color: #34352f;
+	padding: 0.6rem 0.8rem;
+	width: 15%;
+	border: 0;
+	text-decoration: none;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.home,
+.project {
+	color: #ffffff80;
+}
+
+.nav_bar .blog {
+	background-color: #272822;
+}
+
 /* Numbers */
 .numbers {
     padding-top: 32px;
-    padding-left: 48px;
+    padding-left: 2.5rem;
     color: #90908a;
     text-align: right;
     line-height: 24px;
@@ -84,6 +118,7 @@ h3 a:hover {
 
 .images {
     margin-right: 20px;
+    width: 50%;
 }
 
 .first_section .p_text {
@@ -100,7 +135,6 @@ h3 a:hover {
 
 .hr_div:before {
     content: "//";
-    /* margin-right: 2px; */
     color: #88846f;
 }
 
@@ -140,14 +174,77 @@ h3 a:hover {
     color: #4e94ce;
 }
 
-.monokai {
-    margin-left: 150px;
+
+.dropdown {
+	position: relative;
+	display: flex;
+	align-items: center;
 }
 
-.monokai a{
-    color: #ffffff;
-    text-decoration: none;
+.dropdown:hover {
+	color: #4e94ce;
 }
+
+.arrow {
+	position: absolute;
+	color: #a6e22e;
+	font-size: 14px;
+	left: 55%;
+    top: 0.25px;
+	cursor: pointer;
+}
+
+.selectColor {
+	appearance: none;
+	background-color: #272822;
+	color: white;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	font-family: "Fira Code", monospace;
+	padding: 0 0.5rem;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.selectColor:hover,
+.arrow:hover {
+	color: #4e94ce;
+}
+
+option {
+	padding: 1rem 0.5rem;
+}
+
+.number {
+	padding: 0;
+	color: #90908a;
+	counter-reset: lines;
+	list-style: none;
+}
+
+.number li {
+	font-size: 1rem;
+	line-height: 24px;
+	text-align: right;
+	cursor: pointer;
+}
+
+.number li:hover {
+	color: #c2c2bf;
+}
+
+.number li::before {
+	counter-increment: lines;
+	content: counter(lines);
+}
+
+.hidden-li,
+.hidden-br {
+	display: none;
+}
+
+
 
 /* Media Queries */
 
@@ -160,21 +257,37 @@ h3 a:hover {
     h3 a {
         text-decoration: none;
         font-weight: 900;
-        padding-right: 64px;
+        /* padding-right: 64px; */
     }
 
     .first_section .query_p_text {
-        padding-right: 130px;
+        /* padding-right: 130px; */
         margin-bottom: 24px;
     }
 
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:575px) {
+    .nav_bar {
+		display: flex;
+		gap: 1.5px;
+		justify-content: flex-start;
+		padding-left: 0px;
+		padding-top: 0;
+		overflow-x: auto;
+        margin-top: 0;
+	}
+
+	.home,
+	.blog,
+	.project {
+		width: 25%;
+	}
+
     .container {
         display: flex;
         justify-content: flex-start;
-        margin: 32px auto;
+        margin: 0 auto;
     }
 
     .numbers {
@@ -187,7 +300,7 @@ h3 a:hover {
     }
 
     .text_content {
-        padding: 32px 0 0 8px;
+        padding: 2rem 1rem 0 0.9rem;
     }
 
     .header h1 {
@@ -209,17 +322,14 @@ h3 a:hover {
     }
 
     .images {
-        width: 290px;
-        margin-bottom: 24px;
+        width: 95%;
+        margin-bottom: 18px;
     }
 
     h3 {
         font-size: 16px;
     }
 
-    .first_section .p_text {
-        padding-right: 80px;
-    }
 
     .small_text {
         font-size: 14px;
@@ -227,15 +337,6 @@ h3 a:hover {
 
     .scnd_sctn_p_text {
         font-size: 14px;
-        padding-right: 64px;
-    }
-
-    .third_sctn_lrg_txt {
-        padding-right: 270px;
-    }
-
-    .fourth_sctn_lrg_txt {
-        padding-right: 270px;
     }
 
     .first_section .query_p_text {
@@ -258,8 +359,8 @@ h3 a:hover {
         margin-bottom: 24px;
     }
 
-    .monokai {
-        margin-left: 0px;
+    .arrow {
+        left: 25%;
     }
 }
 

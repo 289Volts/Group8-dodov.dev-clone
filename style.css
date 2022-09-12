@@ -12,16 +12,20 @@ ol {
 }
 
 li {
-    color: #90908A;
+	color: #90908a;
 }
 
 code {
-    color: #cfcfc2;
-    font-weight: 500;
+	color: #cfcfc2;
+	font-weight: 500;
 }
 
 ol li {
 	line-height: 22px;
+}
+
+ol li:hover {
+	color: #c2c2bf;
 }
 
 ol li::before {
@@ -30,11 +34,11 @@ ol li::before {
 	content: counter(number);
 }
 
-ul {
+ul:not(.nav-links) {
 	margin-left: 1.65rem;
 }
 
-ul li::marker {
+ul li:not(.socials li, .nav-links li)::marker {
 	content: "-  ";
 	color: #a6e22e;
 }
@@ -48,16 +52,11 @@ ul li::marker {
 	clip-path: inset(0px -15px 0px 0px);
 }
 
-
-
 .noborder {
 	box-shadow: none;
-    clip-path: none;
+	clip-path: none;
 }
 
-.invisible {
-	line-height: 21px;
-}
 
 .dashed::after {
 	content: "------------------------------";
@@ -70,4 +69,19 @@ ul li::marker {
 	color: #757260;
 }
 
+::-webkit-scrollbar {
+		width: 15px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: #1e1f1c;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #79797966;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #646464b3;
+	}
 
